@@ -48,3 +48,10 @@ fn match_2(n: MyNumber) {
         _ => println!("{}", n.value),
     }
 }
+
+// Metodos en Estructuras. Si le pasas self es metodo de instancia. Si no es una función
+impl MyNumber {
+    fn is_strictly_positive(&self) -> bool {
+        self.value > 0
+    }
+}
