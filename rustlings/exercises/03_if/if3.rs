@@ -3,11 +3,11 @@ fn animal_habitat(animal: &str) -> &str {
     let identifier = if animal == "crab" {
         1
     } else if animal == "gopher" {
-        2.0
+        2
     } else if animal == "snake" {
         3
     } else {
-        "Unknown"
+        9
     };
 
     // Don't change the expression below!
@@ -45,7 +45,6 @@ mod tests {
     fn crab_lives_on_beach() {
         assert_eq!(animal_habitat("crab"), "Beach")
     }
-
     #[test]
     fn unknown_animal() {
         assert_eq!(animal_habitat("dinosaur"), "Unknown")
